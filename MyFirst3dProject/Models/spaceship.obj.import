@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/spaceship.obj-5f6ea7356e6c6366219fa18da4d3ee42.mesh"
+
+[deps]
+
+files=[ "res://.import/spaceship.obj-5f6ea7356e6c6366219fa18da4d3ee42.mesh" ]
+
+source_file="res://Models/spaceship.obj"
+dest_files=[ "res://.import/spaceship.obj-5f6ea7356e6c6366219fa18da4d3ee42.mesh", "res://.import/spaceship.obj-5f6ea7356e6c6366219fa18da4d3ee42.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

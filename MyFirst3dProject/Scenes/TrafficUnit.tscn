@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/TrafficUnit.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 1, 0.878431, 0, 1 )
+
+[sub_resource type="SphereMesh" id=3]
+material = SubResource( 2 )
+radius = 0.25
+height = 0.5
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.137255, 1, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[node name="Traffic" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00858307, 0.0271263, 0.0109882 )
+script = ExtResource( 2 )
+
+[node name="TrafficUnit" type="KinematicBody" parent="."]
+transform = Transform( 0.000991336, 0, 0.0999951, 0, 0.1, 0, -0.0999951, 0, 0.000991336, -9.31323e-10, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="TrafficUnit"]
+shape = SubResource( 1 )
+
+[node name="Model" type="Spatial" parent="TrafficUnit"]
+
+[node name="VisibilityNotifier" type="VisibilityNotifier" parent="TrafficUnit"]
+aabb = AABB( -5, -5, -5, 10, 10, 10 )
+
+[node name="Start" type="Spatial" parent="."]
+
+[node name="MeshInstance2" type="MeshInstance" parent="Start"]
+visible = false
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[node name="End" type="Spatial" parent="."]
+
+[node name="MeshInstance2" type="MeshInstance" parent="End"]
+visible = false
+mesh = SubResource( 3 )
+material/0 = SubResource( 5 )
+
+[node name="Target" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Target"]
+visible = false
+mesh = SubResource( 3 )
+material/0 = null

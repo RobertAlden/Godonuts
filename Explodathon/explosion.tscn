@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.128713, 0.282178, 0.485149, 0.970297, 0.980198 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.853516, 0.570122, 0, 1, 0.691339, 0.47635, 0.0438443, 1, 0.181641, 0.181641, 0.181641, 1, 0.269518, 0.269518, 0.269518, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.0957447, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.931122, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.00306749 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+lifetime_randomness = 0.54
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+spread = 92.08
+gravity = Vector3( 0, 98, 0 )
+initial_velocity = 200.0
+initial_velocity_random = 0.91
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+damping = 96.07
+damping_random = 0.53
+scale = 39.46
+scale_random = 0.5
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
+
+[node name="explosion" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="Particles2D" type="Particles2D" parent="."]
+amount = 50
+lifetime = 3.0
+explosiveness = 1.0
+process_material = SubResource( 5 )

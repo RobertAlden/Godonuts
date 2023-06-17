@@ -1,0 +1,273 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://shotgun_fire-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://shotgun_pump-Sheet.png" type="Texture" id=2]
+[ext_resource path="res://Shell.png" type="Texture" id=3]
+[ext_resource path="res://smoke.png" type="Texture" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Fire"
+tracks/0/type = "value"
+tracks/0/path = NodePath("FireAnim:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 1, 1.001 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 4, 6, 7, 8, 8, 8 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Frame:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.235703, -0.235706 ), Vector2( -7.56902, -5.32862 ), Vector2( -11.8021, -4.99791 ), Vector2( -10.2147, -6.71759 ), Vector2( -3.4021, -5.26247 ), Vector2( -2.93911, -1.95538 ), Vector2( -0.359586, -0.103408 ), Vector2( -0.359586, -0.103408 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Frame:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -57.1668, -91.3011, -61.1221, -32.9497, -12.058, -0.146438, -0.146438 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Idle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Idle:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -2.91024, -6.15118 ), Vector2( -2.77795, -8.86298 ), Vector2( -2.91024, -6.15118 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Frame:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1.15327, -0.434132 ), Vector2( -0.690277, -3.34436 ), Vector2( -1.15327, -0.169567 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Pump"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("PumpAnim:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.25, 0.45, 0.5, 0.55, 0.65, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 1, 3, 4, 5, 6, 8, 8 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Frame/EjectionPort/Shell:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.45, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Frame:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.45, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.235703, -0.235706 ), Vector2( -5.70362, -1.42357 ), Vector2( -2.06579, 0.135502 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Frame:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.45, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -9.87594, 0.366093 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Frame/EjectionPort/EjectSmoke:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.45, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.881188, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="Curve" id=6]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.912766, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=7]
+curve = SubResource( 6 )
+
+[sub_resource type="ParticlesMaterial" id=8]
+flag_disable_z = true
+direction = Vector3( -0.3, -1, 0 )
+spread = 14.43
+gravity = Vector3( 0, 98, 0 )
+initial_velocity = 81.0
+angular_velocity = 1000.0
+angular_velocity_random = 0.18
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 7 )
+color_ramp = SubResource( 5 )
+
+[sub_resource type="Gradient" id=9]
+offsets = PoolRealArray( 0, 0.237624, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=10]
+gradient = SubResource( 9 )
+
+[sub_resource type="Curve" id=11]
+_data = [ Vector2( 0, 0.217025 ), 0.0, 0.0, 0, 0, Vector2( 0.865957, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=12]
+curve = SubResource( 11 )
+
+[sub_resource type="ParticlesMaterial" id=13]
+flag_disable_z = true
+direction = Vector3( -1, -1, 0 )
+gravity = Vector3( 0, -1.915, 0 )
+initial_velocity = 2.0
+initial_velocity_random = 0.13
+angular_velocity = 176.6
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 720.0
+angle_random = 1.0
+scale = 0.25
+scale_random = 0.47
+scale_curve = SubResource( 12 )
+color_ramp = SubResource( 10 )
+hue_variation_random = 0.38
+
+[sub_resource type="ParticlesMaterial" id=14]
+flag_disable_z = true
+direction = Vector3( -1, -1, 0 )
+gravity = Vector3( 0, -1.915, 0 )
+initial_velocity = 2.0
+initial_velocity_random = 0.13
+angular_velocity = 176.6
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 720.0
+angle_random = 1.0
+scale = 0.25
+scale_random = 0.47
+scale_curve = SubResource( 12 )
+color_ramp = SubResource( 10 )
+hue_variation_random = 0.38
+
+[node name="Shotgun" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Fire = SubResource( 1 )
+anims/Idle = SubResource( 2 )
+anims/Pump = SubResource( 3 )
+
+[node name="Idle" type="Sprite" parent="."]
+visible = false
+position = Vector2( -2.81817, -8.03859 )
+texture = ExtResource( 2 )
+hframes = 10
+
+[node name="FireAnim" type="Sprite" parent="."]
+visible = false
+position = Vector2( -2.23917, -6.30504 )
+texture = ExtResource( 1 )
+hframes = 9
+
+[node name="PumpAnim" type="Sprite" parent="."]
+position = Vector2( -2.23917, -6.30504 )
+texture = ExtResource( 2 )
+hframes = 10
+frame = 8
+
+[node name="Frame" type="Node2D" parent="."]
+position = Vector2( -2.06579, 0.135502 )
+rotation = 0.00638953
+
+[node name="EjectionPort" type="Node2D" parent="Frame"]
+position = Vector2( -0.766037, -1.59099 )
+
+[node name="Shell" type="Particles2D" parent="Frame/EjectionPort"]
+emitting = false
+amount = 100
+lifetime = 10.0
+local_coords = false
+process_material = SubResource( 8 )
+texture = ExtResource( 3 )
+
+[node name="EjectSmoke" type="Particles2D" parent="Frame/EjectionPort"]
+emitting = false
+amount = 942
+lifetime = 5.0
+local_coords = false
+process_material = SubResource( 13 )
+texture = ExtResource( 4 )
+
+[node name="Barrel" type="Node2D" parent="Frame"]
+position = Vector2( 12.3744, -1.23743 )
+
+[node name="EjectSmoke" type="Particles2D" parent="Frame/Barrel"]
+emitting = false
+amount = 942
+lifetime = 5.0
+local_coords = false
+process_material = SubResource( 14 )
+texture = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="Frame/Barrel"]

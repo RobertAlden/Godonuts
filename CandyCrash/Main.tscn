@@ -1,0 +1,331 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Button.gd" type="Script" id=1]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer3" type="PanelContainer" parent="."]
+margin_top = -1.0
+margin_right = 481.0
+margin_bottom = 313.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_top = 319.0
+margin_right = 481.0
+margin_bottom = 853.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 481.0
+margin_bottom = 85.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+margin_right = 238.0
+margin_bottom = 85.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 231.0
+margin_bottom = 78.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+margin_left = 242.0
+margin_right = 481.0
+margin_bottom = 85.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 232.0
+margin_bottom = 78.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 89.0
+margin_right = 481.0
+margin_bottom = 175.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer2"]
+margin_right = 238.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer2/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 231.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 242.0
+margin_right = 481.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer2/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 232.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 179.0
+margin_right = 481.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer3"]
+margin_right = 238.0
+margin_bottom = 85.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer3/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 231.0
+margin_bottom = 78.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 242.0
+margin_right = 481.0
+margin_bottom = 85.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer3/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 232.0
+margin_bottom = 78.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 268.0
+margin_right = 481.0
+margin_bottom = 354.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer4"]
+margin_right = 238.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer4/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 231.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer4"]
+margin_left = 242.0
+margin_right = 481.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer4/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 232.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 358.0
+margin_right = 481.0
+margin_bottom = 444.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer5"]
+margin_right = 238.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer5/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 231.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer5"]
+margin_left = 242.0
+margin_right = 481.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer5/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 232.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 448.0
+margin_right = 481.0
+margin_bottom = 534.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer6"]
+margin_right = 238.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer6/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 231.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer6"]
+margin_left = 242.0
+margin_right = 481.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer6/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 232.0
+margin_bottom = 79.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/PanelContainer/Button" to="VBoxContainer/HBoxContainer/PanelContainer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/PanelContainer2/Button" to="VBoxContainer/HBoxContainer/PanelContainer2/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/PanelContainer/Button" to="VBoxContainer/HBoxContainer2/PanelContainer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/PanelContainer2/Button" to="VBoxContainer/HBoxContainer2/PanelContainer2/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/PanelContainer/Button" to="VBoxContainer/HBoxContainer3/PanelContainer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/PanelContainer2/Button" to="VBoxContainer/HBoxContainer3/PanelContainer2/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer4/PanelContainer/Button" to="VBoxContainer/HBoxContainer4/PanelContainer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer4/PanelContainer2/Button" to="VBoxContainer/HBoxContainer4/PanelContainer2/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer5/PanelContainer/Button" to="VBoxContainer/HBoxContainer5/PanelContainer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer5/PanelContainer2/Button" to="VBoxContainer/HBoxContainer5/PanelContainer2/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer6/PanelContainer/Button" to="VBoxContainer/HBoxContainer6/PanelContainer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer6/PanelContainer2/Button" to="VBoxContainer/HBoxContainer6/PanelContainer2/Button" method="_on_Button_pressed"]
